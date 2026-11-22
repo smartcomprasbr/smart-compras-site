@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smart Compras: inteligência e economia em cada compra. Um projeto para encontrar, organizar e compartilhar ofertas.">
+  <title>Smart Compras | Inteligência e economia</title>
+  <style>
+    :root {
+      --navy: #12334a;
+      --blue: #24749a;
+      --green: #15966b;
+      --orange: #ff9b35;
+      --light: #f4f8fa;
+      --white: #ffffff;
+      --text: #425466;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--navy);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid #e7edf0;
+      padding: 18px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 27px;
+      font-weight: 800;
+      color: var(--navy);
+      text-decoration: none;
+      letter-spacing: -1px;
+    }
+
+    .brand span { color: var(--green); }
+
+    nav { display: flex; gap: 25px; flex-wrap: wrap; }
+
+    nav a {
+      color: var(--navy);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    nav a:hover { color: var(--green); }
+
+    .hero {
+      background: linear-gradient(135deg, #12334a, #24749a);
+      color: white;
+      padding: 95px 8%;
+      text-align: center;
+    }
+
+    .hero .tag {
+      display: inline-block;
+      background: rgba(255,255,255,.13);
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 30px;
+      padding: 7px 17px;
+      font-size: 13px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 58px);
+      line-height: 1.12;
+      max-width: 850px;
+      margin: 0 auto 22px;
+    }
+
+    .hero h1 span { color: #73e0b2; }
+
+    .hero p {
+      max-width: 690px;
+      margin: 0 auto 30px;
+      color: #e5f0f5;
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--orange);
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 800;
+      padding: 13px 25px;
+      border-radius: 8px;
+    }
+
+    section { padding: 75px 8%; }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .section-intro {
+      text-align: center;
+      color: var(--text);
+      max-width: 700px;
+      margin: 0 auto 38px;
+    }
+
+    .about { background: var(--light); }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e6edf0;
+      border-radius: 13px;
+      padding: 27px;
+      box-shadow: 0 5px 18px rgba(18,51,74,.05);
+    }
+
+    .card .symbol {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 { margin-bottom: 9px; }
+
+    .card p { color: var(--text); font-size: 15px; }
+
+    .stores {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .store {
+      background: var(--light);
+      border: 1px solid #e2ebef;
+      border-radius: 9px;
+      padding: 16px 25px;
+      font-weight: 800;
+      color: var(--navy);
+    }
+
+    .process { background: var(--light); }
+
+    .notice {
+      max-width: 850px;
+      margin: 35px auto 0;
+      background: #eaf7f1;
+      border-left: 5px solid var(--green);
+      border-radius: 8px;
+      padding: 22px;
+      color: var(--navy);
+    }
+
+    .notice strong { color: var(--green); }
+
+    .footer {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 35px 8%;
+    }
+
+    .footer p { color: #d3e0e7; font-size: 14px; }
+
+    .footer .brand { color: white; display: inline-block; margin-bottom: 10px; }
+
+    @media (max-width: 650px) {
+      header { flex-direction: column; }
+      nav { justify-content: center; gap: 15px; }
+      .hero { padding: 70px 7%; }
+      section { padding: 55px 7%; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="brand" href="#">Smart <span>Compras</span></a>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#plataformas">Plataformas</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="tag">Projeto em desenvolvimento</div>
+      <h1>Inteligência e economia em <span>cada compra.</span></h1>
+      <p>
+        O Smart Compras nasce com um propósito:
+        ajudar consumidores a encontrar oportunidades,
+        organizar ofertas e comprar com mais informação.
+      </p>
+      <a class="button" href="#sobre">Conheça o projeto</a>
+    </section>
+
+    <section class="about" id="sobre">
+      <h2 class="section-title">Sobre o Smart Compras</h2>
+      <p class="section-intro">
+        Estamos desenvolvendo um projeto dedicado à pesquisa,
+        organização e divulgação de ofertas de produtos de
+        diferentes lojas e plataformas digitais.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="symbol">🔎</div>
+          <h3>Pesquisa de ofertas</h3>
+          <p>Identificar oportunidades e reunir informações de produtos disponíveis em diferentes plataformas.</p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">📊</div>
+          <h3>Organização de preços</h3>
+          <p>Organizar informações para facilitar a comparação e a avaliação das oportunidades.</p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">🏷️</div>
+          <h3>Cupons e promoções</h3>
+          <p>Compartilhar cupons com suas condições e restrições verificadas antes da divulgação.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="plataformas">
+      <h2 class="section-title">Plataformas de interesse</h2>
+      <p class="section-intro">
+        O projeto prevê trabalhar com informações de ofertas
+        disponibilizadas em plataformas como:
+      </p>
+
+      <div class="stores">
+        <div class="store">Mercado Livre</div>
+        <div class="store">Shopee</div>
+        <div class="store">Amazon</div>
+      </div>
+    </section>
+
+    <section class="process" id="como-funciona">
+      <h2 class="section-title">Nosso compromisso</h2>
+      <p class="section-intro">
+        Queremos tornar a experiência de encontrar boas ofertas
+        mais simples, transparente e confiável.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="symbol">1️⃣</div>
+          <h3>Encontrar</h3>
+          <p>Pesquisar produtos e oportunidades nas plataformas participantes.</p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">2️⃣</div>
+          <h3>Conferir</h3>
+          <p>Verificar preços, links, condições e regras de cupons antes de compartilhar.</p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">3️⃣</div>
+          <h3>Compartilhar</h3>
+          <p>Preparar ofertas selecionadas para divulgação em canais como WhatsApp e Instagram.</p>
+        </article>
+      </div>
+
+      <div class="notice">
+        <strong>Transparência em primeiro lugar.</strong>
+        <p>
+          O Smart Compras está em fase de desenvolvimento.
+          As funcionalidades apresentadas descrevem os objetivos
+          do projeto e ainda não representam serviços integralmente disponíveis.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#">Smart <span>Compras</span></a>
+    <p>Inteligência e economia em cada compra.</p>
+    <p style="margin-top:12px">© 2026 Smart Compras. Todos os direitos reservados.</p>
+    <p style="margin-top:8px">Projeto independente em desenvolvimento.</p>
+  </footer>
+</body>
+</html>
