@@ -7,16 +7,16 @@
   <meta name="description" content="Smart Compras: inteligência e economia em cada compra. Um projeto para encontrar, organizar e compartilhar ofertas.">
   <title>Smart Compras | Inteligência e economia</title>
   <style>
-    :root { color-scheme: only light;
+   :root {
+  color-scheme: light;
+  --navy: #12334a;
+  --blue: #24749a;
+  --green: #15966b;
+  --orange: #ff9b35;
+  --light: #f4f8fa;
+  --white: #ffffff;
+  --text: #425466;
 }
-      --navy: #12334a;
-      --blue: #24749a;
-      --green: #15966b;
-      --orange: #ff9b35;
-      --light: #f4f8fa;
-      --white: #ffffff;
-      --text: #425466;
-    }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -183,23 +183,18 @@ border-radius: 10px;
     }
 
     .notice strong { color: var(--green); }
-
-    .footer {
-  background: var(--navy);
+.footer {
+  background-color: #12334a;
   color: #ffffff;
   text-align: center;
   padding: 35px 8%;
 }
 
 .footer p {
-  .footer p,
-.footer p a {
-  color: #ffffff !important;
+  color: #ffffff;
   font-size: 14px;
-  opacity: 1;
-  visibility: visible;
-}
   line-height: 1.6;
+  opacity: 1;
 }
 
 .footer a {
@@ -207,7 +202,7 @@ border-radius: 10px;
 }
 
 .footer a:hover {
-  color: var(--green);
+  color: #15966b;
 }
 
 .footer .brand {
@@ -217,6 +212,15 @@ border-radius: 10px;
 }
 
 .footer .brand img {
+  display: block;
+  width: 260px;
+  max-width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+    
   background: #ffffff;
   padding: 10px 14px;
   border-radius: 10px;
